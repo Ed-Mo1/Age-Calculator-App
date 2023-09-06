@@ -61,6 +61,9 @@ function calculateAge(birthDate) {
     ageYear--;
     ageMonth += 12;
   }
+  if (+ageDay < 0) {
+    ageDay = -ageDay;
+  }
   document.querySelector("#month-value").textContent =
     ageMonth < 10 ? `0${ageMonth}` : ageMonth;
   document.querySelector("#year-value").textContent =
