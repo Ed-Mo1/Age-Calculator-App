@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/bootstrap.min.css" />
+    <link rel="stylesheet" href="./src/index.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <style>
+      .attribution {
+        padding: 15px 0;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="age-app" class="mx-auto">
+      <form action="" id="form-age">
+        <div class="inputs d-flex column-gap-2 column-gap-md-4 pb-3">
+          <div class="form-group position-relative">
+            <label for="day" class="form-label text-uppercase">day</label>
+            <input
+              id="day"
+              type="text"
+              maxlength="2"
+              class="form-control fw-bold form-control-lg text-uppercase"
+              placeholder="dd"
+            />
+          </div>
+          <div class="form-group position-relative">
+            <label for="month" class="form-label text-uppercase">month</label>
+            <input
+              type="text"
+              id="month"
+              maxlength="2"
+              class="form-control fw-bold form-control-lg text-uppercase"
+              placeholder="mm"
+            />
+          </div>
+          <div class="form-group position-relative">
+            <label for="year" class="form-label text-uppercase">year</label>
+            <input
+              id="year"
+              type="text"
+              maxlength="4"
+              min="1900"
+              class="form-control fw-bold form-control-lg text-uppercase"
+              placeholder="yyyy"
+            />
+          </div>
+        </div>
+        <div class="submit w-100 text-end position-relative">
+          <button
+            class="btn rounded-pill p-3 ms-auto position-relative z-2"
+            type="submit"
+          >
+            <img
+              src="./assets/images/icon-arrow.svg"
+              class=""
+              alt=""
+              srcset=""
+            />
+          </button>
+        </div>
+      </form>
+      <div class="results">
+        <h2 class="d-flex align-items-center text-capitalize">
+          <span id="year-value">--</span> years
+        </h2>
+        <h2 class="d-flex align-items-center text-capitalize">
+          <span id="month-value">--</span> months
+        </h2>
+        <h2 class="d-flex align-items-center text-capitalize">
+          <span id="day-value">--</span> days
+        </h2>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/Ed-Mo1" target="_blank"
+          >Eyad Muhammad</a
+        >.
+      </div>
+    </div>
+    <script src="./src/scrollreveal.min.js"></script>
+    <script src="./src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+body {
+  height: 100vh !important;
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  place-content: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.btn {
+  background-color: hsl(259, 100%, 65%);
+  transition: background 0.3s ease-in;
+}
+input:focus {
+  box-shadow: none !important;
+  border-color: hsl(259, 100%, 65%) !important;
+}
+.btn:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+.btn:active {
+  background-color: hsl(0, 0%, 8%) !important;
+}
+#age-app {
+  padding: 30px;
+  width: 90%;
+  max-width: 650px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-bottom-right-radius: 150px;
+  margin-inline: auto;
+}
+.submit::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: hsl(0, 1%, 44%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.form-group {
+  width: 20%;
+  margin-bottom: 20px;
+}
+label {
+  color: hsl(0, 1%, 44%);
+}
+
+input {
+  font-size: 2rem;
+  color: hsl(0, 0%, 86%);
+}
+.form-group h4 {
+  font-size: 0.8rem !important;
+  font-style: italic;
+  color: rgba(220, 53, 69);
+  position: absolute;
+  top: 110%;
+}
+
+.results h2 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-weight: 800;
+  font-style: italic;
+}
+h2 span {
+  color: hsl(259, 100%, 65%);
+  font-weight: 700;
+}
+
+@media (width<575px) {
+  :root {
+    font-size: 14px;
+  }
+  #age-app {
+    border-bottom-right-radius: 90px;
+  }
+  .results h2 {
+    font-size: 4rem;
+  }
+  .form-group {
+    width: auto;
+  }
+  .submit {
+    text-align: center !important;
+    margin-bottom: 20px;
+  }
+}
+@media (width<400px) {
+  .results h2 {
+    font-size: 3rem;
+  }
+}
